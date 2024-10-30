@@ -5,20 +5,27 @@ namespace FOS.Models.Entities
     public class User
     {
         public int UserId { get; set; }
-        public string UserCode { get; set; }
-        public string UserFirstName { get; set; }
-        public string UserLastName { get; set; }
-        public string UserUserName { get; set; }
-        public string UserPassword { get; set; }
-        public DateTime? UserDoj { get; set; }
-        public DateTime? UserDob { get; set; }
-        public string UserRole { get; set; }
-        public string UserCompany { get; set; }
-        public string UserPhone { get; set; }
-        public bool? IsActive { get; set; }
-        public int CreatedBy { get; set; }
-        public DateTime? CreatedDate { get; set; }
-        public int? ModifiedBy { get; set; }
-        public DateTime? ModifiedDate { get; set; }
+        public string? UserLoginId { get; set; }
+        public string? UserFirstName { get; set; }
+        public string? UserLastName { get; set; }
+        public string? UserName { get; set; }
+        public string? Passsword { get; set; }
+        public int? UserLevelId { get; set; }
+        public DateTime? LastLoginDate { get; set; }
+        public string? UserTheme { get; set; }
+        public string? CompanyName { get; set; }
+        public string? CompanyCode { get; set; }
+        public string? LevelAccess { get; set; }
+        public string? CountryName { get; set; }
+        public string? UserType { get; set; }
+        public string? MarqueeText { get; set; }
+        public string? Address1 { get; set; }
+        public string? Address2 { get; set; }
+        public string? ZipCode { get; set; }
+        public string? City { get; set; }
+        public string? State { get; set; }
+        public DateTime? LncSerialDate { get; set; }
+        public DateTime? LncDate { get; set; }
+        public string? SessionId { get; set; }
     }
 }

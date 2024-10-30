@@ -141,7 +141,7 @@
                                                                      where  User_User_Name	 = @UserName and User_Password = @UserPassword ";
         public const string DEACTIVATE_USER = @"Update [dbo].[AMB_USER_DETAILS] Set User_IsActive = 0 Where [User_Id]		=	@UserId ";
 
-        public const string GetUserByUsernameAndPassword = @"SELECT    [User_Id]
+        public const string GetUserByUsernameAndPassword = @"SELECT        [User_Id]
                                                                           ,[User_First_Name]
                                                                           ,[User_Last_Name]
                                                                           ,[User_User_Name]
@@ -154,6 +154,7 @@
                                                                           ,[User_Modified_Date]
                                                                           ,[User_IsActive]
                                                                       FROM [APARTMENT_MAINTENANCE_DB].[dbo].[AMB_USER_DETAILS] Where User_User_Name = @UserName;";
+        public const string GetUserByUsername = @"FOS_Validate_Login";
 
         public const string GetUserById = @"SELECT    [User_Id]
                                                                           ,[User_First_Name]
