@@ -14,10 +14,10 @@
             public const string Role = "role";
             public const string Admin = "admin";
             public const string User = "user";
-            public const string DataEventRecords = "dataEventRecords";
-            public const string AdminDataEventRecords = "dataEventRecords.admin";
-            public const string UserAdminEventRecords = "dataEventRecords.user";
-            public const string ScopeDisplayName = "Scope for the AMS API Resource";
+            public const string DataEventRecords = "userManagementApi";
+            public const string AdminDataEventRecords = "userManagementApi.admin";
+            public const string UserAdminEventRecords = "userManagementApi.user";
+            public const string ScopeDisplayName = "Scope for the FOS API Resource";
         }
 
         /// <summary>
@@ -28,10 +28,10 @@
             public const string Role = "role";
             public const string Admin = "admin";
             public const string User = "user";
-            public const string DataEventRecordsApi = "dataEventRecordsApi";
+            public const string UserApi = "userManagementApi";
             public const string ApiResourceSecret = "C8EF369FEAD9FF58A847244243A6B";
-            public const string DataEventRecordScope = "dataEventRecordsScope";
-            public const string ApiResouceDisplayName = "Data Event Records API";
+            public const string UserApiScope = "userApiScope";
+            public const string UserApiResouceDisplayName = "User API";
         }
 
         /// <summary>
@@ -128,12 +128,12 @@
         /// <summary>
         /// Contains keys for different services used in the application.
         /// </summary>
-        public static class HLServiceKey
+        public static class FOSServiceKey
         {
             /// <summary>
             /// Contains keys for different file exporters used in the application.
             /// </summary>
-            public static class HLFileExporter
+            public static class FOSFileExporter
             {
                 /// <summary>
                 /// The key for the Excel file exporter service.

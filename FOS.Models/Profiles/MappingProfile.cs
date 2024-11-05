@@ -3,15 +3,15 @@ using FOS.Models.Exceptions;
 using FOS.Models.Responses;
 using System.Net;
 
-namespace HL.ConflictsCheck.Request.Application.Profiles;
+namespace FOS.Models.Profiles;
 
-/// <summary>Mapping profile for <see cref="HLBaseResponse"/></summary>
-public sealed class HLBaseResponseMappingProfile : Profile
+/// <summary>Mapping profile for <see cref="FOSBaseResponse"/></summary>
+public sealed class FOSBaseResponseMappingProfile : Profile
 {
     /// <summary>
-    /// Initializes a new instance of the <see cref="HLBaseResponseMappingProfile"/> class.
+    /// Initializes a new instance of the <see cref="FOSBaseResponseMappingProfile"/> class.
     /// </summary>
-    public HLBaseResponseMappingProfile()
+    public FOSBaseResponseMappingProfile()
     {
         CreateMap<Exception, FOSBaseResponse>()
             .ForMember(d => d.StatusCode, m => m.MapFrom(_ => HttpStatusCode.InternalServerError))
@@ -33,13 +33,13 @@ public sealed class HLBaseResponseMappingProfile : Profile
             .ForPath(d => d.Error.InnerError, m => m.MapFrom(s => s));
     }
 
-    /// <summary>Mapping profile for <see cref="HLErrorResponse"/></summary>
-    public sealed class HLErrorResponseMappingProfile : Profile
+    /// <summary>Mapping profile for <see cref="FOSErrorResponse"/></summary>
+    public sealed class FOSErrorResponseMappingProfile : Profile
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="HLErrorResponseMappingProfile"/> class.
+        /// Initializes a new instance of the <see cref="FOSErrorResponseMappingProfile"/> class.
         /// </summary>
-        public HLErrorResponseMappingProfile()
+        public FOSErrorResponseMappingProfile()
         {
             CreateMap<FOSException, FOSErrorResponse>()
                 .ForMember(d => d.Message, m => m.MapFrom(s => s.Message))
