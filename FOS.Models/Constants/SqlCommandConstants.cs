@@ -156,19 +156,10 @@
                                                                       FROM [APARTMENT_MAINTENANCE_DB].[dbo].[AMB_USER_DETAILS] Where User_User_Name = @UserName;";
         public const string GetUserByUsername = @"FOS_Validate_Login";
 
-        public const string GetUserById = @"SELECT    [User_Id]
-                                                                          ,[User_First_Name]
-                                                                          ,[User_Last_Name]
-                                                                          ,[User_User_Name]
-                                                                          ,[User_Password]
-                                                                          ,[User_Doj]
-                                                                          ,[User_Dob]
-                                                                          ,[User_Created_By]
-                                                                          ,[User_Created_Date]
-                                                                          ,[User_Modified_By]
-                                                                          ,[User_Modified_Date]
-                                                                          ,[User_IsActive]
-                                                                      FROM [APARTMENT_MAINTENANCE_DB].[dbo].[AMB_USER_DETAILS] Where [User_Id] = @UserId;";
+        public const string GetUserById = @"SELECT  UM.[User_ID]    as  UserId, 
+	                                                UM.[User_Name]  as  UserName,
+                                                    UM.[Email_ID]   as  UserEmail
+	                                                FROM FOS_SYSAD_UserMaster(nolock) UM  WHERE UM.[User_ID]= @UserLoginID AND UM.Is_Active =1";
 
         public const string BMS_ADD_EDIT_DELETE_BANKDETAILS = "[dbo].[BMS_ADD_EDIT_DELETE_BANKDETAILS]";
         public const string BMS_FETCH_BANKDETAILS = "[dbo].[BMS_FETCH_BANKDETAILS]";

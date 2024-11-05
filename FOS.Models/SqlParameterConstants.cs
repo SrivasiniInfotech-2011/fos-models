@@ -22,7 +22,7 @@
         public const string CITY = "@City";
         public const string STATE = "@State";
         public const string ZIP_CODE = "@Zip_Code";
-        public const string LNC_SERIAL_DATE = "@LNCSerDat"; 
+        public const string LNC_SERIAL_DATE = "@LNCSerDate"; 
         public const string LNC_DATE = "@LNCDate";
         public const string SESSION_ID = "@SessionID";
         public const string SSO_ENABLED = "@SSOEnabled";
