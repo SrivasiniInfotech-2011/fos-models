@@ -155,7 +155,7 @@
                                                                           ,[User_IsActive]
                                                                       FROM [APARTMENT_MAINTENANCE_DB].[dbo].[AMB_USER_DETAILS] Where User_User_Name = @UserName;";
         public const string GetUserByUsername = @"FOS_Validate_Login";
-
+        public const string GetUserProgramList = @"FOS_Get_User_ProgrmLists";
         public const string GetUserById = @"SELECT  UM.[User_ID]    as  UserId, 
 	                                                UM.[User_Name]  as  UserName,
                                                     UM.[Email_ID]   as  UserEmail

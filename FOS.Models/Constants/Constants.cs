@@ -5,7 +5,7 @@
         public const string APP_SECRET = "wSGnVqSnc@4iNj2Qe^S-8ZnvEHQ-UyGS~y)[;yhJdt'#ox<vG%Mp8Gn{EZyG#Db";
         public const string APP_SCOPE = "amsApiRequestScope";
         public const string APP_CLIENT_ID = "A25A96F4D2E6193E5D28F52176622";
-
+        public const string IdentityServerConfigurationKey = "IdentityServerUrl";
         /// <summary>
         /// User Claims.
         /// </summary>
@@ -232,6 +232,15 @@
                 /// </remarks>
                 public const string OfficeExcel = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
             }
+        }
+
+        /// <summary>
+        /// Sql Column Names.
+        /// </summary>
+        public static class SqlColumnNames
+        {
+            public const string ModuleName = "Module_Name";
+            public const string ProgramCode = "Program_Code";
         }
     }
 }
