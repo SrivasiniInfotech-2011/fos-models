@@ -24,7 +24,7 @@ public class FOSMessageResponse : FOSBaseResponse
     /// <value><see cref="bool"/></value>
     [JsonProperty(FieldName.IsRequestValid, Order = FieldOrder.IsRequestValid,
         Required = Required.Default)]
-    public bool IsRequestValid => Error.ValidationErrors.Count==0;
+    public bool IsRequestValid => Error.ValidationErrors!=null && Error.ValidationErrors.Count==0;
 
     /// <summary>Gets/sets the message command/query</summary>
     /// <value><see cref="object"/></value>
