@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 
 namespace FOS.Models.Entities
 {
@@ -10,6 +11,7 @@ namespace FOS.Models.Entities
         public string? UserLastName { get; set; }
         public string? UserEmail { get; set; }
         public string? UserName { get; set; }
+        [JsonIgnore()]
         public string? Passsword { get; set; }
         public int? UserLevelId { get; set; }
         public DateTime? LastLoginDate { get; set; }
