@@ -241,6 +241,55 @@
         {
             public const string ModuleName = "Module_Name";
             public const string ProgramCode = "Program_Code";
+            public const string ProspectCode = "Prospect_Code";
+            public const string ProspectId = "Prospect_ID";
+            public const string ProspectDate = "Prospect_Date";
+            public const string LocationId = "Location_ID";
+            public const string LocationDescription = "Location_Description";
+            public const string ProspectName = "Prospect_Name";
+            public const string ProspectTypeId = "Prospect_Type_ID";
+            public const string GenderId = "Gender_ID";
+            public const string GenderName = "Gender_Name";
+            public const string DateofBirth = "Prospect_DateofBirth";
+            public const string MobileNumber = "Mobile_Number";
+            public const string AlternateMobileNumber = "Alternate_MobileNumber";
+            public const string Website = "Website";
+            public const string Email = "Email";
+        }
+
+        /// <summary>
+        /// Display Messages.
+        /// </summary>
+        public static class Messages
+        {
+            public const string PROSPECT_ADDED_SUCCESSFULLY = "The Prospect has been submitted Successfully";
+            public const string USER_ID_EMPTY = "UserId should not be empty";
+            public const string COMPANY_ID_EMPTY = "Company should not be empty";
+            public const string LOB_ID_EMPTY = "Line of Business should not be empty";
+            public const string MOBILE_NUMBER_EMPTY = "Mobile Number should not be empty";
+            public const string AAADHAR_AND_PAN_EMPTY = "Either Aadhar or PAN Number should be provided.";
+            public const string CREATE_PROSPECT_EMPTY = "Prospect Details should not be null.";
+            public const string PROSPECT_DATE_EMPTY = "Prospect Date should not be null.";
+            public const string CUSTOMER_ID_EMPTY = "Customer Id should not be null.";
+            public const string PROSPECT_TYPE_ID_EMPTY = "Prospect Type Id should not be null.";
+            public const string PROSPECT_NAME_EMPTY = "Prospect Name should not be null.";
+            public const string COMMS_ADDRESSLINE1_EMPTY = "Communication Address Line 1 should not be null.";
+            public const string COMMS_ADDRESSLINE2_EMPTY = "Communication Address Line 2 should not be null.";
+            public const string COMMS_LANDMARK_EMPTY = "Communication Landmark should not be null.";
+            public const string COMMS_CITY_EMPTY = "Communication City should not be null.";
+            public const string COMMS_STATE_EMPTY = "Communication State should not be null.";
+            public const string COMMS_COUNTRY_EMPTY = "Communication Country should not be null.";
+            public const string COMMS_PINCODE_EMPTY = "Communication Pincode should not be null.";
+            public const string PERMS_ADDRESSLINE1_EMPTY = "Permanent Address Line 1 should not be null.";
+            public const string PERMS_ADDRESSLINE2_EMPTY = "Permanent Address Line 2 should not be null.";
+            public const string PERMS_LANDMARK_EMPTY = "Permanent Landmark should not be null.";
+            public const string PERMS_CITY_EMPTY = "Permanent City should not be null.";
+            public const string PERMS_STATE_EMPTY = "Permanent State should not be null.";
+            public const string PERMS_COUNTRY_EMPTY = "Permanent Country should not be null.";
+            public const string PERMS_PINCODE_EMPTY = "Permanent Pincode should not be null.";
+            public const string PAN_EMPTY = "PAN Number should be provided.";
+            public const string PAN_IMAGE_EMPTY = "PAN Number image should be provided.";
+            public const string PROSPECT_IMAGE_EMPTY = "Prospect Image should be provided.";
         }
     }
 }
