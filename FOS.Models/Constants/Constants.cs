@@ -290,6 +290,7 @@
             public const string PAN_EMPTY = "PAN Number should be provided.";
             public const string PAN_IMAGE_EMPTY = "PAN Number image should be provided.";
             public const string PROSPECT_IMAGE_EMPTY = "Prospect Image should be provided.";
+            public const string INVALID_USER = "The User with the Login Combnation does not exist. Please check and retry later.";
         }
     }
 }
