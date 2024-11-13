@@ -265,6 +265,8 @@
         public static class Messages
         {
             public const string PROSPECT_ADDED_SUCCESSFULLY = "The Prospect has been submitted Successfully";
+            public const string PROSPECT_AADHAR_ALREADY_EXISTS = "The given Aadhar Card Number already exists in our Records.Please verify and try again";
+            public const string PROSPECT_PAN_ALREADY_EXISTS = "The given PAN Card Number already exists in our Records.Please verify and try again";
             public const string USER_ID_EMPTY = "UserId should not be empty";
             public const string COMPANY_ID_EMPTY = "Company should not be empty";
             public const string LOB_ID_EMPTY = "Line of Business should not be empty";
@@ -293,6 +295,13 @@
             public const string PAN_IMAGE_EMPTY = "PAN Number image should be provided.";
             public const string PROSPECT_IMAGE_EMPTY = "Prospect Image should be provided.";
             public const string INVALID_USER = "The User with the Login Combnation does not exist. Please check and retry later.";
+        }
+
+        public enum SaveStatus
+        {
+            OK = 0,
+            AADHARALREADYEXISTS = 1,
+            PANALREADYEXISTS = 2
         }
     }
 }
