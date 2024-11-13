@@ -6,6 +6,8 @@
         public const string APP_SCOPE = "amsApiRequestScope";
         public const string APP_CLIENT_ID = "A25A96F4D2E6193E5D28F52176622";
         public const string IdentityServerConfigurationKey = "IdentityServerUrl";
+        public const string Passphrase = "Al!5(iV3@aij%9hT";
+
         /// <summary>
         /// User Claims.
         /// </summary>

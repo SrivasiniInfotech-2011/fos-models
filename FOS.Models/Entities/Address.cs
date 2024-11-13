@@ -7,13 +7,13 @@ namespace FOS.Models.Entities
         /// <summary>
         /// Address Line 1.
         /// </summary>
-        [JsonProperty(PropertyName = "address1", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        [JsonProperty(PropertyName = "addressLine1", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? AddressLine1 { get; set; }
 
         /// <summary>
         /// Address Line 2.
         /// </summary>
-        [JsonProperty(PropertyName = "address2", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        [JsonProperty(PropertyName = "addressLine2", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? AddressLine2 { get; set; }
 
         /// <summary>
