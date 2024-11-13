@@ -16,6 +16,7 @@ namespace FOS.Models.Entities
         public int? UserLevelId { get; set; }
         public DateTime? LastLoginDate { get; set; }
         public string? UserTheme { get; set; }
+        public int? CompanyId { get; set; }
         public string? CompanyName { get; set; }
         public string? CompanyCode { get; set; }
         public string? LevelAccess { get; set; }
