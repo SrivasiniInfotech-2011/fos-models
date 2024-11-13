@@ -24,8 +24,8 @@
 
         public const string FOS_ORG_INSERT_ProspectMaster = @"FOS_ORG_INSERT_ProspectMaster";
 
-        public const string FOS_GET_STATE_LOOKUP = @"Select STATE_ID    as [LookupValue_ID]
-                                                           ,STATE_NAME  as [LookupValue_Description]
+        public const string FOS_GET_STATE_LOOKUP = @"Select STATE_ID    as LookupValueId
+                                                           ,STATE_NAME  as LookupValueDescription
                                                             from FOS_SYSAD_STATEMASTER(Nolock)
                                                             --Where Company_ID = @Company_ID
                                                             Order by STATE_NAME";
