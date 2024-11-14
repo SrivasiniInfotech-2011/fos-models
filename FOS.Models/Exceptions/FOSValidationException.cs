@@ -21,11 +21,11 @@ public sealed class FOSValidationException : FOSException
     /// <summary>Initializes the exception with the <see cref="IReadOnlyDictionary{TKey,TValue}"/> collection of validation errors</summary>
     /// <param name="errors"><see cref="IReadOnlyDictionary{TKey,TValue}"/> where TKey is <see cref="string"/> and TValue is <see cref="string"/> array.</param>
     // #Localize
-    public FOSValidationException(IReadOnlyDictionary<string, string[]> errors)
+    public FOSValidationException(Dictionary<string, string[]> errors)
         : base(HttpStatusCode.BadRequest, "Validation Failure - One or more validation errors occurred")
         => ValidationErrors = errors;
 
     /// <summary>Gets the map list of validation errors.</summary>
     /// <value><see cref="IReadOnlyDictionary{TKey,TValue}"/> where TKey is <see cref="string"/> and TValue is <see cref="string"/> array.</value>
-    public IReadOnlyDictionary<string, string[]> ValidationErrors { get; }
+    public Dictionary<string, string[]> ValidationErrors { get; }
 }

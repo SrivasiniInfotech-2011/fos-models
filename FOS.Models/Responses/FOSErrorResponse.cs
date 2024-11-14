@@ -61,7 +61,7 @@ public sealed class FOSErrorResponse
     /// <value><see cref="IReadOnlyDictionary{TKey,TValue}"/> where TKey is <see cref="string"/> and TValue is <see cref="string"/> array.</value>
     [JsonProperty(FieldName.ValidationErrors, Order = FieldOrder.ValidationErrors,
         Required = Required.Default)]
-    public IReadOnlyDictionary<string, string[]> ValidationErrors { get; set; } = default!;
+    public Dictionary<string, string[]> ValidationErrors { get; set; } = default!;
 
     private struct FieldName
     {
