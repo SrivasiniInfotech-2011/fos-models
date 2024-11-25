@@ -295,6 +295,7 @@
             public const string PAN_IMAGE_EMPTY = "PAN Number image should be provided.";
             public const string PROSPECT_IMAGE_EMPTY = "Prospect Image should be provided.";
             public const string INVALID_USER = "The User with the Login Combnation does not exist. Please check and retry later.";
+            public const string NO_RECORDS_FOUND = "No Record exists for the submitted details.Please correct your search and try again.";
         }
 
         public enum SaveStatus
