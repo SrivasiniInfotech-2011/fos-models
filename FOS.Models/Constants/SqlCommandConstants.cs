@@ -37,6 +37,18 @@
                                                     UM.[Email_ID]   as  UserEmail
 	                                                FROM FOS_SYSAD_UserMaster(nolock) UM  WHERE UM.[User_ID]= @UserLoginID AND UM.Is_Active =1";
 
+
+        public const string GetUserLevellookup = @"Select User_Level_ID as [LookupValue_ID], User_Level_Name as [LookupValue_Description]" +
+                                                    " from FOS_SYSAD_UserLevelMapping(Nolock) " +
+                                                    "Where Created_By = @User_ID " +
+                                                    "Order by User_Level_Name";
+
+        public const string GetUserDesignationlookup = @"Select DESIGNATION_ID as [LookupValue_ID]    
+                                                        , DESIGNATION_NAME as [LookupValue_Description]    
+                                                        from FOS_SYSAD_USERDESIGNATION(Nolock)    
+                                                        Where Company_ID = @Company_ID    
+                                                        Order by DESIGNATION_NAME";
+
         public enum Mode
         {
             ADD = 1,
