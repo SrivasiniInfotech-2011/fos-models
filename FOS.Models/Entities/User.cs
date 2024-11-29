@@ -31,5 +31,6 @@ namespace FOS.Models.Entities
         public DateTime? LncSerialDate { get; set; }
         public DateTime? LncDate { get; set; }
         public string? SessionId { get; set; }
+        public long SessionExpireDate { get; set; }
     }
 }

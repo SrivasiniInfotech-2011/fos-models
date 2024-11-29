@@ -36,7 +36,20 @@
 	                                                UM.[User_Name]  as  UserName,
                                                     UM.[Email_ID]   as  UserEmail
 	                                                FROM FOS_SYSAD_UserMaster(nolock) UM  WHERE UM.[User_ID]= @UserLoginID AND UM.Is_Active =1";
-
+        public const string FOS_ORG_INSERT_LEADDETAILS = @"FOS_ORG_Insert_LeadDetails";
+        public const string FOS_ORG_GET_LEADPROSPECTDETAILS = "FOS_ORG_GET_LeadProspectDetails";
+        public const string FOS_ORG_INSERT_LEADGENERATION_HEADER = "FOS_ORG_INSERT_LeadGeneration_Header";
+        public const string FOS_ORG_INSERT_LEADINDIVIDUALDETAILS = "FOS_ORG_INSERT_LeadIndividualDetails";
+        public const string FOS_ORG_INSERT_LEADNONINDIVIDUALDETAILS = "FOS_ORG_INSERT_LeadNonIndividualDetails";
+        public const string FOS_ORG_GET_ASSETLOOKUP = "FOS_ORG_GET_AssetLookup";
+        public const string FOS_ORG_GET_LEADDETAILS = "FOS_ORG_GET_LeadDetails";
+        public const string FOS_ORG_INSERT_LEADGUARANTORDETAILS = "FOS_ORG_INSERT_LeadGuarantorDetails";
+        public const string FOS_ORG_GET_PROSPECTMASTERLOOKUP = "FOS_ORG_GET_ProspectMasterLookup";
+        public const string FOS_ORG_GETLEADSTATUS = @"SELECT LSL.Lead_Status_ID AS StatusId,
+                                                             LSL.Status_Description as StatusDescription
+                                                        FROM FOS_ORG_LeadStatusLookup LSL";
+        public const string FOS_ORG_GET_LEADTRANSLANDER = "FOS_ORG_GET_LeadTranslander_New";
+        public const string FOS_GET_LOOKUPS_FOR_LEAD_SCREEN = @"FOS_ORG_GET_LeadGenerationLookup";
         public enum Mode
         {
             ADD = 1,

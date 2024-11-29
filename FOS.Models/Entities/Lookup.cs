@@ -22,7 +22,7 @@ namespace FOS.Models.Entities
         /// Lookup Value Id.
         /// </summary>
         [JsonProperty(PropertyName = "lookupValueId", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
-        public string? LookupValueId { get; set; }
+        public int? LookupValueId { get; set; }
 
         /// <summary>
         /// Lookup Value Id.
