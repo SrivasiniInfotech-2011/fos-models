@@ -90,7 +90,7 @@ namespace FOS.Models.Entities
         public decimal? ExistingLoanCount { get; set; }
 
         [JsonProperty(PropertyName = "exisitngLoanEMI", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
-        public decimal? ExistingLoanEMI { get; set; }
+        public decimal? ExistingLoanEmi { get; set; }
 
         [JsonProperty(PropertyName = "leadRemarks", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? LeadRemarks { get; set; }

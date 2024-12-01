@@ -11,7 +11,7 @@ namespace FOS.Models.Entities
     {
         [JsonProperty(PropertyName = "lineOfBusinessId", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
 
-        public int lineOfBusinessId { get; set; }
+        public int LineOfBusinessId { get; set; }
         [JsonProperty(PropertyName = "lineOfBusinessName", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string LineOfBusinessName { get; set; }
     }

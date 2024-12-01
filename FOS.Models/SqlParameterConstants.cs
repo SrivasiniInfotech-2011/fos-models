@@ -76,6 +76,8 @@
         public const string SEARCH_VALUE = "@SearchValue";
         public const string TOTAL_RECORDS = "@TotalRecords";
         public const string STATUS = "@Status";
+        public const string OPTION = "@OPTION";
+        public const string PREFIX_TEXT = "@PrefixText";
         //Lead
         public const string LEAD_ID = "@Lead_ID";
         public const string LEAD_VEHICLE_NUMBER = "@Vehicle_Number";

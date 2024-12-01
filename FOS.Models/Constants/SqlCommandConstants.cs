@@ -50,6 +50,9 @@
                                                         FROM FOS_ORG_LeadStatusLookup LSL";
         public const string FOS_ORG_GET_LEADTRANSLANDER = "FOS_ORG_GET_LeadTranslander_New";
         public const string FOS_GET_LOOKUPS_FOR_LEAD_SCREEN = @"FOS_ORG_GET_LeadGenerationLookup";
+        public const string FOS_SYSAD_DOCUMENT_LOOKUPDETAILS = "FOS_SYSAD_DOCUMENT_LOOKUPDETAILS";
+        public const string FOS_ORG_GET_USERNAMEAGT = "FOS_ORG_GET_USERNAMEAGT";
+        public const string FOS_GET_LOB_LIST = "FOS_GET_LOB_LIST";
         public enum Mode
         {
             ADD = 1,
