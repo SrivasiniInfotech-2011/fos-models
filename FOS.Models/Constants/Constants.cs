@@ -304,6 +304,7 @@
             public const string LEAD_NONINDIVIDUAL_ADDED_FAILURE = "An Error Occured while adding Non-Individual details to the Lead {LEAD_ID}";
             public const string LEAD_HEADER_ADDED_SUCCESSFULLY = "The Header details have been added successfully to the Lead {LEAD_ID}";
             public const string LEAD_HEADER_ADDED_FAILURE = "An Error Occured while adding Header details to the Lead {LEAD_ID}";
+            public const string NO_RECORDS_FOUND = "No Record exists for the submitted details.Please correct your search and try again.";
         }
 
         public enum SaveStatus
