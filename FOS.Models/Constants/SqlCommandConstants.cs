@@ -49,6 +49,9 @@
                                                         Where Company_ID = @Company_ID    
                                                         Order by DESIGNATION_NAME";
 
+        public const string FOS_SYSAD_Insert_UserDetails = @"FOS_SYSAD_Insert_UserDetails";
+
+
         public enum Mode
         {
             ADD = 1,
