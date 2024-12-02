@@ -5,9 +5,8 @@ namespace FOS.Models.Entities
     public class LineOfBusiness
     {
 
-        [JsonProperty(PropertyName = "lineOfBusinessId", Required = Required.Always, NullValueHandling = NullValueHandling.Ignore)]
         public int LineOfBusinessId { get; set; }
-        [JsonProperty(PropertyName = "lineOfBusinessName", Required = Required.Always, NullValueHandling = NullValueHandling.Ignore)]
-        public string? LineOfBusinessName { get; set; }
+        [JsonProperty(PropertyName = "lineOfBusinessName", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public string LineOfBusinessName { get; set; }
     }
 }
