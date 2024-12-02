@@ -313,5 +313,46 @@
             AADHARALREADYEXISTS = 1,
             PANALREADYEXISTS = 2
         }
+
+        public enum DocumentCategoryOptions
+        {
+            GENERAL = 1,
+            LOAN_DOCUMENTS = 2
+        }
+
+        public enum FileOutput
+        {
+            EXCEL = 1,
+            PDF = 2
+        }
+        public static Dictionary<string, string> ProspectDataColumnNames = new Dictionary<string, string>
+        {
+            { "Prospect Id", "ProspectId" },
+            { "Prospect Code", "ProspectCode" },
+            { "Prospect Name", "ProspectName" },
+            { "Prospect Date", "ProspectDate" },
+            { "Date Of Birth", "DateOfBirth" },
+            { "Prospect Type", "ProspectType" },
+            { "Contact Number", "ContactNumber" },
+            { "Alternate Contact Number", "AlternateContactNumber" },
+            { "Customer Code", "CustomerCode" },
+            { "Email", "Email" },
+            { "Website", "Website" },
+            { "Gender", "Gender" },
+            { "Industry Group", "IndustryGroup" },
+            { "Address Line 1", "AddressLine1" },
+            { "Address Line 2", "AddressLine2" },
+            { "City", "City" },
+            { "Address Contact Number", "AddressContactNumber" },
+            { "Address Email", "AddressEmail" },
+            { "Address Landmark", "AddressLandmark" },
+            { "Pin code", "Pincode" },
+            { "Address Website", "AddressWebsite" },
+            { "Company Name", "CompanyName" },
+            { "Address Type", "AddressType" },
+            { "Person", "Person" },
+            { "State Name", "StateName" },
+            { "Country", "Country" }
+        };
     }
 }

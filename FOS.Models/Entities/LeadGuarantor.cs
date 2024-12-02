@@ -62,7 +62,7 @@ namespace FOS.Models.Entities
         public string? GuarantorImagePath { get; set; }
 
         [JsonProperty(PropertyName = "prospectId", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
-        public string? ProspectId { get; set; }
+        public int? ProspectId { get; set; }
 
         [JsonProperty(PropertyName = "prospectCode", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? ProspectCode { get; set; }

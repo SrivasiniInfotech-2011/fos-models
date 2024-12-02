@@ -28,7 +28,8 @@
         public const string SESSION_ID = "@SessionID";
         public const string SSO_ENABLED = "@SSOEnabled";
         public const string LOGIN_COMPANY_CODE = "@LoginCompanyCode";
-
+        public const string PREFIX_TEXT = "@PrefixText";
+        public const string OPTION = "@Option";
         //Prospect
         public const string PROSPECT_COMPANY_ID = "@Company_ID";
         public const string PROSPECT_USER_ID = "@User_ID";
