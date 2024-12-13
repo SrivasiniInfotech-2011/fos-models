@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FOS.Models.Entities
 {
-    public class UserInsertDetails
+    public class InsertUserDetailsModel
     {
         /// <summary>
         ///CompanyId.
@@ -121,13 +121,13 @@ namespace FOS.Models.Entities
         /// Maritial_ID
         /// </summary>
         [JsonProperty(PropertyName = "maritialID", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
-        public Address? MaritialID { get; set; }
+        public int? MaritialID { get; set; }
 
         /// <summary>
         /// Aadhar_Number.
         /// </summary>
         [JsonProperty(PropertyName = "aadharNumber", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
-        public Address? AadharNumber { get; set; }
+        public string? AadharNumber { get; set; }
 
       
 

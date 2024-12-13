@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace FOS.Models.Requests
 {
-    public class UserManagementLookupRequest
+    public class GetUserDetailsRequest
     {
+
+
         [JsonProperty(PropertyName = "userId", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public int? UserId { get; set; }
 

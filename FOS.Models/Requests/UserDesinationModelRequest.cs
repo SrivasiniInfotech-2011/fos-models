@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace FOS.Models.Requests
 {
-    public class UserManagementLookupRequest
+    public class UserDesinationModelRequest
     {
-        [JsonProperty(PropertyName = "userId", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
-        public int? UserId { get; set; }
-
         [JsonProperty(PropertyName = "companyId", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public int? CompanyId { get; set; }
     }

@@ -254,9 +254,38 @@
             public const string GenderName = "Gender_Name";
             public const string DateofBirth = "Prospect_DateofBirth";
             public const string MobileNumber = "Mobile_Number";
+            public const string MobileNumberr = "Mobile Number";
+
             public const string AlternateMobileNumber = "Alternate_MobileNumber";
             public const string Website = "Website";
-            public const string Email = "Email";
+           
+            public const string UserName = "User_Name";
+
+            public const string UserID = "User_ID";
+            public const string UserCode = "User_Code";
+            public const string Gender_Id = "GenderID";
+            public const string Password = "Password";
+            public const string DOJ = "Doj";
+            public const string Email = "Email_ID";
+            public const string EmergencycontactNumber = "EmergencyContact_Number";
+            public const string Designation = "Designation";
+            public const string UserLevelID = "User_LevelID";
+            public const string UserLevel = "User_Level";
+            public const string ReportingNextlevel = "Reporting_HigherLevel";
+            
+            public const string FatherName = "Fathername";
+            public const string MotherName = "Mothername";
+            public const string SpouseName = "SpouseName";
+            public const string MaritialID = "Maritial_Status_ID";
+            public const string AadharNumber = "AadharNumber";
+            public const string PanNumber = "PanNumber";
+            public const string Address = "Address";
+            public const string UserImagepath = "UserImage";
+            
+            public const string DoB = "DateofBirth";
+          
+            //public const string GenderName = "Gender_Name";
+
         }
 
         /// <summary>
