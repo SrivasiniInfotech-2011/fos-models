@@ -32,7 +32,7 @@ namespace FOS.Models.Entities
         public string? GuarantorName { get; set; }
 
         [JsonProperty(PropertyName = "guaranterDateOfBirth", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
-        public string? GuaranterDateOfBirth { get; set; }
+        public DateTime? GuaranterDateOfBirth { get; set; }
 
         [JsonProperty(PropertyName = "mobileNumber", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? MobileNumber { get; set; }
@@ -51,6 +51,8 @@ namespace FOS.Models.Entities
 
         [JsonProperty(PropertyName = "aadharImagePath", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? AadharImagePath { get; set; }
+        [JsonProperty(PropertyName = "aadharImageContent", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public string? AadharImageContent { get; set; }
 
         [JsonProperty(PropertyName = "panNumber", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? PanNumber { get; set; }
@@ -58,8 +60,14 @@ namespace FOS.Models.Entities
         [JsonProperty(PropertyName = "panImagePath", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? PanImagePath { get; set; }
 
+        [JsonProperty(PropertyName = "panImageContent", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public string? PanImageContent { get; set; }
+
         [JsonProperty(PropertyName = "guarantorImagePath", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? GuarantorImagePath { get; set; }
+
+        [JsonProperty(PropertyName = "guarantorImageContent", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public string? GuarantorImageContent { get; set; }
 
         [JsonProperty(PropertyName = "prospectId", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public int? ProspectId { get; set; }
