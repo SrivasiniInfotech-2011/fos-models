@@ -28,7 +28,8 @@
         public const string SESSION_ID = "@SessionID";
         public const string SSO_ENABLED = "@SSOEnabled";
         public const string LOGIN_COMPANY_CODE = "@LoginCompanyCode";
-
+        public const string PREFIX_TEXT = "@PrefixText";
+        public const string OPTION = "@Option";
         //Prospect
         public const string PROSPECT_COMPANY_ID = "@Company_ID";
         public const string PROSPECT_USER_ID = "@User_ID";
@@ -67,6 +68,82 @@
         public const string PROSPECT_CREATED_BY = "@Created_By";
         public const string PROSPECT_CODE = "@Prospect_Code";
         public const string PROSPECT_ERROR_CODE = "@Error_Code";
+
+        public const string LOB_ID = "@LOB_ID";
+        public const string VALIDATION_CODE = "@Validation_Code";
+        public const string VALIDATION_MESSAGE = "@Validation_Message";
+        public const string CURRENT_PAGE = "@CurrentPage";
+        public const string PAGE_SIZE = "@PageSize";
+        public const string SEARCH_VALUE = "@SearchValue";
+        public const string TOTAL_RECORDS = "@TotalRecords";
+        public const string STATUS = "@Status";
+        //Lead
+        public const string LEAD_ID = "@Lead_ID";
+        public const string LEAD_VEHICLE_NUMBER = "@Vehicle_Number";
+        public const string LEAD_NUMBER = "@Lead_Number";
+        public const string LEAD_GUARANTORTYPE_ID = "@GuarantorType_ID";
+        public const string LEAD_RELATIONSHIP_ID = "@Relationship_ID";
+        public const string LEAD_GURANTOR_NAME = "@Gurantor_Name";
+        public const string LEAD_GURANTOR_IMAGEPATH = "@Gurantor_Imagepath";
+        public const string LEAD_GUARANTOR_AMOUNT = "@Guarantor_Amount";
+        public const string LEAD_DATE = "@Lead_Date";
+        public const string LEAD_FINANCE_AMONT = "@FINANCE_AMONT";
+        public const string LEAD_DOCUMENT_ID = "@DOCUMENT_ID";
+        public const string LEAD_TENURE = "@TENURE";
+        public const string LEAD_TENURE_TYPE_ID = "@Tenure_Type_ID";
+        public const string LEAD_RATE = "@RATE";
+        public const string LEAD_SALES_PERSON_ID = "@Sales_Person_ID";
+        public const string LEAD_REPAYMENT_FREQUENCY_ID = "@REPAYMENT_FREQUENCY_ID";
+        public const string LEAD_LEAVE_PERIOD = "@LEAVE_PERIOD";
+        public const string LEAD_ASSET_CLASS_ID = "@ASSET_CLASS_ID";
+        public const string LEAD_ASSET_NAME_ID = "@ASSET_NAME_ID";
+        public const string LEAD_ASSET_TYPE_ID = "@ASSET_TYPE_ID";
+        public const string ASSET_MODEL = "@ASSET_MODEL";
+        public const string LEAD_ENGINE_NUMBER = "@ENGINE_NUMBER";
+        public const string LEAD_CHASSIS_NUMBER = "@CHASSIS_NUMBER";
+        public const string LEAD_SERIAL_NUMBER = "@SERIAL_NUMBER";
+        public const string LEAD_OWNERSHIP_ID = "@OWNERSHIP_ID";
+        public const string LEAD_MODEL = "@MODEL";
+        public const string LEAD_VEHICLE_TYPE_ID = "@VEHICLE_TYPE_ID";
+        public const string LEAD_TAX_TYPE_ID = "@TAX_TYPE_ID";
+        public const string LEAD_FUEL_TYPE_ID = "@FUEL_TYPE_ID";
+        public const string LEAD_HOUSE_TYPE_ID = "@House_Type_ID";
+        public const string LEAD_FLOOR_NUMBER = "@Floor_Number";
+        public const string LEAD_HOUSESTATUS_ID = "@HouseStatus_ID";
+        public const string LEAD_HOUSE_RENTAL_AMOUNT = "@House_Rental_Amount";
+        public const string LEAD_MARITIALSTATUS_ID = "@MaritialStatus_ID";
+        public const string LEAD_FATHER_NAME = "@Father_Name";
+        public const string LEAD_MOTHER_NAME = "@Mother_Name";
+        public const string LEAD_EMPLOYMENT_ID = "@Employment_ID";
+        public const string LEAD_MONTHLY_SALARY = "@Monthly_Salary";
+        public const string LEAD_SPOUSEEMPLOYMENT_ID = "@SpouseEmployment_ID";
+        public const string LEAD_SPOUSE_MONTHLY_SALARY = "@Spouse_Monthly_Salary";
+        public const string LEAD_ADULT_DEPENDENTS = "@Adult_Dependents";
+        public const string LEAD_CHILD_DEPENDENTS = "@Child_Dependents";
+        public const string LEAD_OWNED_TWO_WHEELER = "@Owned_Two_Wheeler";
+        public const string LEAD_OWNED_FOUR_WHEELER = "@Owned_Four_Wheeler";
+        public const string LEAD_OWNED_HEAVY_VEHICLES = "@Owned_Heavy_Vehicles";
+        public const string LEAD_EXISTING_LOAN_ALIVE = "@Existing_Loan_Alive";
+        public const string LEAD_EXISITNG_LOANS_MONTHLY_EMI = "@Exisitng_Loans_Monthly_EMI";
+        public const string LEAD_SPOUSENAME = "@SpouseName";
+        public const string LEAD_PUBLIC_CLOSELY_ID = "@Public_Closely_ID";
+        public const string LEAD_DIRECTOR_PARTHERS_COUNT = "@Director_Parthers_Count";
+        public const string LEAD_LISTED_EXCHANGE = "@Listed_Exchange";
+        public const string LEAD_PAID_UP_CAPITAL = "@Paid_Up_Capital";
+        public const string LEAD_FACE_VALUE_SHARE = "@Face_Value_Share";
+        public const string LEAD_BOOK_VALUE_SHARE = "@Book_Value_Share";
+        public const string LEAD_BUSINESS_PROFILE = "@Business_Profile";
+        public const string LEAD_GEOGRAPHICAL_COVERAGE = "@Geographical_Coverage";
+        public const string LEAD_BRANCH_COUNT = "@Branch_Count";
+        public const string LEAD_GOVERNMENT_INSTITUTION_PARTICIPATION_ID = "@Government_Institution_Participation_ID";
+        public const string LEAD_PROMOTER_STAKE = "@Promoter_Stake";
+        public const string LEAD_JV_PARTNER_NAME = "@JV_Partner_Name";
+        public const string LEAD_JV_PARTNER_PERCENTAGE = "@JV_Partner_Percentage";
+        public const string LEAD_CEO_NAME = "@CEO_Name";
+        public const string LEAD_CEO_DATEOFBIRTH = "@CEO_DateofBirth";
+        public const string LEAD_CEO_WEDDING_DATE = "@CEO_Wedding_Date";
+        public const string LEAD_EXPERIENCE = "@Experience";
+        public const string LEAD_RESIDENTIAL_ADDRESS = "@Residential_Address";
 
 
 

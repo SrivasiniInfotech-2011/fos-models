@@ -7,6 +7,7 @@
         public const string APP_CLIENT_ID = "A25A96F4D2E6193E5D28F52176622";
         public const string IdentityServerConfigurationKey = "IdentityServerUrl";
         public const string Passphrase = "Al!5(iV3@aij%9hT";
+        public const string LeadIdString = "{LEAD_ID}";
 
         /// <summary>
         /// User Claims.
@@ -324,6 +325,14 @@
             public const string PAN_IMAGE_EMPTY = "PAN Number image should be provided.";
             public const string PROSPECT_IMAGE_EMPTY = "Prospect Image should be provided.";
             public const string INVALID_USER = "The User with the Login Combnation does not exist. Please check and retry later.";
+            public const string LEAD_GUARANTOR_ADDED_SUCCESSFULLY = "The Guarantors have been added successfully to the Lead {LEAD_ID}";
+            public const string LEAD_GUARANTOR_ADD_FAILURE = "An Error Occured when trying to add Guarantors to the Lead {LEAD_ID}";
+            public const string LEAD_INDIVIDUAL_ADDED_SUCCESSFULLY = "The Individual details have been added successfully to the Lead {LEAD_ID}";
+            public const string LEAD_INDIVIDUAL_ADDED_FAILURE = "An Error Occured while adding Individual details to the Lead {LEAD_ID}";
+            public const string LEAD_NONINDIVIDUAL_ADDED_SUCCESSFULLY = "The Non-Individual details have been added successfully to the Lead {LEAD_ID}";
+            public const string LEAD_NONINDIVIDUAL_ADDED_FAILURE = "An Error Occured while adding Non-Individual details to the Lead {LEAD_ID}";
+            public const string LEAD_HEADER_ADDED_SUCCESSFULLY = "The Header details have been added successfully to the Lead {LEAD_ID}";
+            public const string LEAD_HEADER_ADDED_FAILURE = "An Error Occured while adding Header details to the Lead {LEAD_ID}";
             public const string NO_RECORDS_FOUND = "No Record exists for the submitted details.Please correct your search and try again.";
         }
 
@@ -333,5 +342,46 @@
             AADHARALREADYEXISTS = 1,
             PANALREADYEXISTS = 2
         }
+
+        public enum DocumentCategoryOptions
+        {
+            GENERAL = 1,
+            LOAN_DOCUMENTS = 2
+        }
+
+        public enum FileOutput
+        {
+            EXCEL = 1,
+            PDF = 2
+        }
+        public static Dictionary<string, string> ProspectDataColumnNames = new Dictionary<string, string>
+        {
+            { "Prospect Id", "ProspectId" },
+            { "Prospect Code", "ProspectCode" },
+            { "Prospect Name", "ProspectName" },
+            { "Prospect Date", "ProspectDate" },
+            { "Date Of Birth", "DateOfBirth" },
+            { "Prospect Type", "ProspectType" },
+            { "Contact Number", "ContactNumber" },
+            { "Alternate Contact Number", "AlternateContactNumber" },
+            { "Customer Code", "CustomerCode" },
+            { "Email", "Email" },
+            { "Website", "Website" },
+            { "Gender", "Gender" },
+            { "Industry Group", "IndustryGroup" },
+            { "Address Line 1", "AddressLine1" },
+            { "Address Line 2", "AddressLine2" },
+            { "City", "City" },
+            { "Address Contact Number", "AddressContactNumber" },
+            { "Address Email", "AddressEmail" },
+            { "Address Landmark", "AddressLandmark" },
+            { "Pin code", "Pincode" },
+            { "Address Website", "AddressWebsite" },
+            { "Company Name", "CompanyName" },
+            { "Address Type", "AddressType" },
+            { "Person", "Person" },
+            { "State Name", "StateName" },
+            { "Country", "Country" }
+        };
     }
 }
