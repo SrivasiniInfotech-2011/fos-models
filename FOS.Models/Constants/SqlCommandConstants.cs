@@ -89,6 +89,27 @@
 		 LEFT JOIN  [dbo].[FOS_SYSAD_LookupMaster]				LKA			ON		LKA.LookupValue_ID				=		PA.Address_LookupValue_ID	 AND LKA.LookupType_ID	=	PA.Address_LookupType_ID
 		 LEFT JOIN  [dbo].[FOS_SYSAD_LookupMaster]				LKC			ON		LKC.LookupValue_ID				=		PA.Country_ID AND LKC.LookupType_ID = 22				
 		 LEFT JOIN  [dbo].[FOS_SYSAD_LookupMaster]				LKP			ON		LKP.LookupValue_ID				=		PA.Person_LookupValue_ID AND LKA.LookupType_ID = PA.Person_LookupType_ID";
+
+
+        public const string GetUserLevellookup = @"Select User_Level_ID as LookupValueId, User_Level_Name as LookupValueDescription" +
+                                                    " from FOS_SYSAD_UserLevelMapping(Nolock) " +
+                                                    "Where Created_By = @UserId " +
+                                                    "Order by User_Level_Name";
+
+        public const string GetUserDesignationlookup = @"Select DESIGNATION_ID as LookupValueID    
+                                                        , DESIGNATION_NAME as LookupValueDescription    
+                                                        from FOS_SYSAD_USERDESIGNATION(Nolock)    
+                                                        Where Company_ID = @CompanyID    
+                                                        Order by DESIGNATION_NAME";
+
+        public const string FOS_SYSAD_Insert_UserDetails = @"FOS_SYSAD_Insert_UserDetails";
+
+
+        public const string FOS_SYSAD_GET_UserViewDetails = @"FOS_SYSAD_GET_UserViewDetails";
+
+        public const string FOS_Sysad_Get_UserMaster = @"FOS_Sysad_Get_UserMaster";
+
+
         public enum Mode
         {
             ADD = 1,
