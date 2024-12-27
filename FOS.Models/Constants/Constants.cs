@@ -284,10 +284,45 @@
             public const string UserImagepath = "UserImage";
             
             public const string DoB = "DateofBirth";
-          
+
+
+
+            //Company Master
+            public const string CompanyID = "Company_ID";
+            public const string CompanyCode = "Company_Code";
+            public const string CompanyName = "Company_Name";
+            public const string CompanyAddress = "Company_Address";
+            public const string City = "City";
+            public const string State = "State";
+            public const string Country = "Country";
+            public const string ZipCode = "Zip_Code";
+            public const string ConstitutionalStatusId = "Constitutional_Status_Id";
+            public const string CDCEOHeadName = "CD_CEO_Head_Name";
+            public const string CDTelephoneNumber = "CD_Telephone_Number";
+            public const string CDMobileNumber = "CD_Mobile_Number";
+            public const string CDEmailID = "CD_Email_ID";
+            public const string CDWebsite = "CD_Website";
+            public const string CDSysAdminUserCode = "CD_Sys_Admin_User_Code";
+            public const string CDSysAdminUserPassword = "CD_Sys_Admin_User_Password";
+            public const string ODCommunicationAddress = "OD_Communication_Address";
+            public const string ODAddress1 = "OD_Address1";
+            public const string ODCity = "OD_City";
+            public const string ODState = "OD_State";
+            public const string ODCountry = "OD_Country";
+            public const string ODZipCode = "OD_Zip_Code";
+            public const string ODDateOfIncorporation = "OD_Date_Of_Incorporation";
+            public const string ODRegLicNumber = "OD_Reg_Lic_Number";
+            public const string ODValidityOfRegLicNumber = "OD_Validity_Of_Reg_Lic_Number";
+            public const string ODIncomeTaxPANNumber = "OD_Income_Tax_PAN_Number";
+            public const string Inr = "INR";
+            public const string ODRemarks = "OD_Remarks";
+            public const string Active = "Active";
+            public const string Constitutional_Status = "Constitutional_Status";
+
             //public const string GenderName = "Gender_Name";
 
         }
+
 
         /// <summary>
         /// Display Messages.

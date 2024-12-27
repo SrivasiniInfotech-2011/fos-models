@@ -108,6 +108,17 @@
         public const string FOS_SYSAD_GET_UserViewDetails = @"FOS_SYSAD_GET_UserViewDetails";
 
         public const string FOS_Sysad_Get_UserMaster = @"FOS_Sysad_Get_UserMaster";
+        public const string FOS_ORG_GET_UserNameAGT = @"FOS_ORG_GET_UserNameAGT";
+        //       public const string FOS_ORG_GET_UserNameAGT = @"SELECT User_ID as UserID,  
+        //(User_Code + '-' + User_Name) AS UserName  
+        //FROM FOS_SYSAD_UserMaster (NOLOCK)   
+        //where Company_ID = @CompanyID   
+        //and (User_Name + User_Code) like  '%' + @PrefixText + '%'; "; 
+
+        public const string FOS_Get_Company_Details = @"FOS_Get_Company_Details";
+
+
+
 
 
         public enum Mode
