@@ -270,6 +270,7 @@
             public const string Email = "Email_ID";
             public const string EmergencycontactNumber = "EmergencyContact_Number";
             public const string Designation = "Designation";
+            public const string Designationid = "DesignationID";
             public const string UserLevelID = "User_LevelID";
             public const string UserLevel = "User_Level";
             public const string ReportingNextlevel = "Reporting_HigherLevel";
@@ -277,6 +278,8 @@
             public const string FatherName = "Fathername";
             public const string MotherName = "Mothername";
             public const string SpouseName = "SpouseName";
+            //view spn
+            public const string Spouse_Name = "Spousename";
             public const string MaritialID = "Maritial_Status_ID";
             public const string AadharNumber = "AadharNumber";
             public const string PanNumber = "PanNumber";
@@ -284,8 +287,11 @@
             public const string UserImagepath = "UserImage";
             
             public const string DoB = "DateofBirth";
-          
+            public const string marutialStatusDiscription = "Maritial_Status_Description";
+            public const string REPORTING_HIGHER_LEVEL = "REPORTING_HIGHER_LEVEL";
             //public const string GenderName = "Gender_Name";
+          
+          
 
         }
 

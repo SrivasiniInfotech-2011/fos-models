@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FOS.Models.Entities
 {
-    public class InsertUserDetailsModel
+    public class GetInsertUserDetailsModel
     {
         /// <summary>
         ///CompanyId.
@@ -40,7 +40,11 @@ namespace FOS.Models.Entities
         public int? GenderId { get; set; }
 
 
-      
+        /// <summary>
+        /// genderId.
+        /// </summary>
+        [JsonProperty(PropertyName = "genderName", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public string? GenderName { get; set; }
 
         /// <summary>
         /// Password.
@@ -66,11 +70,15 @@ namespace FOS.Models.Entities
         [JsonProperty(PropertyName = "emergencycontactNumber", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? EmergencycontactNumber { get; set; }
 
-        /// <summary>
-        /// Designation.
-        /// </summary>
+        ///// <summary>
+        ///// Designation.
+        ///// </summary>
+        //[JsonProperty(PropertyName = "designation", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        //public string? Designation { get; set; }
+
         [JsonProperty(PropertyName = "designation", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public int? Designation { get; set; }
+
 
         /// <summary>
         /// UserLevelID.
@@ -78,11 +86,25 @@ namespace FOS.Models.Entities
         [JsonProperty(PropertyName = "userLevelID", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public int? UserLevelID { get; set; }
 
+
+        /// <summary>
+        /// UserLevelID.
+        /// </summary>
+        [JsonProperty(PropertyName = "userLevel", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public string? UserLevel { get; set; }
+
         /// <summary>
         /// ReportingNextlevel.
         /// </summary>
         [JsonProperty(PropertyName = "reportingNextlevel", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public int? ReportingNextlevel { get; set; }
+
+
+        /// <summary>
+        /// ReportingNextlevel.
+        /// </summary>
+        [JsonProperty(PropertyName = "ReportingGHigherLevel", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public string? ReportingGHigherLevel { get; set; }
 
         /// <summary>
         /// User_Group.
@@ -126,11 +148,28 @@ namespace FOS.Models.Entities
         [JsonProperty(PropertyName = "maritialID", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public int? MaritialID { get; set; }
 
+
+        /// <summary>
+        /// Maritial_ID
+        /// </summary>
+        [JsonProperty(PropertyName = "maritiaStatuslID", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public int? MaritiaStatuslID { get; set; }
+
+        /// <summary>
+        /// Maritial_ID
+        /// </summary>
+        [JsonProperty(PropertyName = "marutialStatusDiscription", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public string? MarutialStatusDiscription { get; set; }
+
         /// <summary>
         /// Aadhar_Number.
         /// </summary>
         [JsonProperty(PropertyName = "aadharNumber", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? AadharNumber { get; set; }
+
+      
+
+       
 
         /// <summary>
         /// PAN Card Number.
@@ -150,17 +189,13 @@ namespace FOS.Models.Entities
         [JsonProperty(PropertyName = "userImagepath", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? UserImagepath { get; set; }
 
-        /// <summary>
-        /// User_Imagepath.
-        /// </summary>
-        [JsonProperty(PropertyName = "userImagepathContent", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
-        public string? UserImagepathContent { get; set; }
 
         /// <summary>
         /// Is_Active.
         /// </summary>
         [JsonProperty(PropertyName = "isActive", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public int? IsActive { get; set; }
+
 
         /// <summary>
         /// createdBy.
