@@ -53,6 +53,15 @@
         public const string FOS_GET_LOB_LIST = "FOS_Get_LOB_LIST";
         public const string FOS_ORG_GET_USERNAMEAGT = "FOS_ORG_GET_UserNameAGT";
         public const string FOS_SYSAD_DOCUMENT_LOOKUPDETAILS = "FOS_SYSAD_Document_LookupDetails";
+        public const string FOS_ORG_GET_FVRHIRERLOOKUP = "FOS_ORG_GET_FVRHirerLookup";
+        public const string FOS_ORG_INSERT_FVRHIRERDETAILS = "FOS_ORG_Insert_FVRHirerDetails";
+        public const string FOS_ORG_GET_LEADHIRERDETAILS = "FOS_ORG_GET_LeadHirerDetails_New";
+        public const string FOS_ORG_GET_FVRNEIGHBOURDETAILS = "FOS_ORG_Get_FVRNeighbourDetails";
+        public const string FOS_ORG_GET_FVRASSETLOOKUP = "FOS_ORG_GET_FVRAssetLookup";
+        public const string FOS_ORG_GET_LEADASSETDETAILS = "FOS_ORG_GET_LeadAssetDetails";
+        public const string FOS_ORG_GET_FVRNEIGHBOURLOOKUP = "FOS_ORG_GET_FVRNeighbourLookup"; 
+        public const string FOS_ORG_INSERT_FVRASSETDETAILS = "FOS_ORG_INSERT_FVRAssetDetails";
+        public const string FOS_ORG_GET_FVRASSETDETAILS = "FOS_ORG_GET_FVRASSETDETAILS";
         public const string FOS_PROSPECT_EXPORT_QUERY = @"SELECT DISTINCT PH.Prospect_ID AS ProspectId,
 				PH.Prospect_Code as ProspectCode,
 				PH.Prospect_Name as ProspectName,
@@ -89,6 +98,35 @@
 		 LEFT JOIN  [dbo].[FOS_SYSAD_LookupMaster]				LKA			ON		LKA.LookupValue_ID				=		PA.Address_LookupValue_ID	 AND LKA.LookupType_ID	=	PA.Address_LookupType_ID
 		 LEFT JOIN  [dbo].[FOS_SYSAD_LookupMaster]				LKC			ON		LKC.LookupValue_ID				=		PA.Country_ID AND LKC.LookupType_ID = 22				
 		 LEFT JOIN  [dbo].[FOS_SYSAD_LookupMaster]				LKP			ON		LKP.LookupValue_ID				=		PA.Person_LookupValue_ID AND LKA.LookupType_ID = PA.Person_LookupType_ID";
+
+
+        public const string GetUserLevellookup = @"Select User_Level_ID as LookupValueId, User_Level_Name as LookupValueDescription" +
+                                                    " from FOS_SYSAD_UserLevelMapping(Nolock) " +
+                                                    "Where Created_By = @UserId " +
+                                                    "Order by User_Level_Name";
+
+        public const string GetUserDesignationlookup = @"Select DESIGNATION_ID as LookupValueID    
+                                                        , DESIGNATION_NAME as LookupValueDescription    
+                                                        from FOS_SYSAD_USERDESIGNATION(Nolock)    
+                                                        Where Company_ID = @CompanyID    
+                                                        Order by DESIGNATION_NAME";
+
+        public const string FOS_SYSAD_Insert_UserDetails = @"FOS_SYSAD_Insert_UserDetails";
+
+
+        public const string FOS_SYSAD_GET_UserViewDetails = @"FOS_SYSAD_GET_UserViewDetails";
+
+        public const string FOS_Sysad_Get_UserMaster = @"FOS_Sysad_Get_UserMaster";
+        public const string FOS_ORG_GET_UserNameAGT = @"FOS_ORG_GET_UserNameAGT";
+ //       public const string fos_org_get_usernameagt = @"select user_id as userid,  
+ //(user_code + '-' + user_name) as username  
+ //from fos_sysad_usermaster (nolock)   
+ //where company_id = @companyid   
+ //and (user_name + user_code) like  '%' + @prefixtext + '%'; "; 
+ 
+
+
+
         public enum Mode
         {
             ADD = 1,
