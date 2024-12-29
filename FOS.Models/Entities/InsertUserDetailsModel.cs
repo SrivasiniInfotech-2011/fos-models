@@ -39,9 +39,6 @@ namespace FOS.Models.Entities
         [JsonProperty(PropertyName = "genderId", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public int? GenderId { get; set; }
 
-
-      
-
         /// <summary>
         /// Password.
         /// </summary>
@@ -153,8 +150,8 @@ namespace FOS.Models.Entities
         /// <summary>
         /// User_Imagepath.
         /// </summary>
-        [JsonProperty(PropertyName = "userImagepathContent", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
-        public string? UserImagepathContent { get; set; }
+        [JsonProperty(PropertyName = "userImageContent", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public string? UserImageContent { get; set; }
 
         /// <summary>
         /// Is_Active.
