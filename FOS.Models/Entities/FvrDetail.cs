@@ -13,7 +13,7 @@ namespace FOS.Models.Entities
         [JsonProperty(PropertyName = "fvrNeighbourHood", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public FvrNeighbourHood? FvrNeighbourHood { get; set; }
 
-        [JsonProperty(PropertyName = "fvrNeighbourHoodDocuments", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
-        public FvrDocument[]? FvrNeighbourHoodDocuments { get; set; }
+        [JsonProperty(PropertyName = "fvrDocuments", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public FvrDocument[]? FvrDocuments { get; set; }
     }
 }

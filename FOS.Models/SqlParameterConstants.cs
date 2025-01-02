@@ -80,6 +80,7 @@
         public const string STATUS = "@Status";
         //Lead
         public const string LEAD_ID = "@Lead_ID";
+        public const string PERSON_TYPE = "@Person_Type";
         public const string LEAD_VEHICLE_NUMBER = "@Vehicle_Number";
         public const string LEAD_NUMBER = "@Lead_Number";
         public const string LEAD_GUARANTORTYPE_ID = "@GuarantorType_ID";

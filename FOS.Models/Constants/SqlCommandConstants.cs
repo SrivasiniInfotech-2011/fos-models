@@ -62,6 +62,7 @@
         public const string FOS_ORG_GET_FVRNEIGHBOURLOOKUP = "FOS_ORG_GET_FVRNeighbourLookup"; 
         public const string FOS_ORG_INSERT_FVRASSETDETAILS = "FOS_ORG_INSERT_FVRAssetDetails";
         public const string FOS_ORG_GET_FVRASSETDETAILS = "FOS_ORG_GET_FVRASSETDETAILS";
+        public const string FOS_ORG_GET_FVRDETAILS = "FOS_ORG_Get_FVRDetails";
         public const string FOS_PROSPECT_EXPORT_QUERY = @"SELECT DISTINCT PH.Prospect_ID AS ProspectId,
 				PH.Prospect_Code as ProspectCode,
 				PH.Prospect_Name as ProspectName,

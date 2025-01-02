@@ -29,7 +29,7 @@ namespace FOS.Models.Entities
         public int? LocalityId { get; set; }
 
         [JsonProperty(PropertyName = "localityName", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
-        public int? LocalityName { get; set; }
+        public string? LocalityName { get; set; }
 
         [JsonProperty(PropertyName = "houseType", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public int? HouseType { get; set; }
@@ -68,7 +68,7 @@ namespace FOS.Models.Entities
         public string? HouseImagePath { get; set; }
 
         [JsonProperty(PropertyName = "furnitures", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
-        public string[]? Furnitures { get; set; }
+        public string? Furnitures { get; set; }
 
         [JsonProperty(PropertyName = "verifierId", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? VerifierId { get; set; }
