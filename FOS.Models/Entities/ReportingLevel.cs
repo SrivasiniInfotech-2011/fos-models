@@ -21,6 +21,6 @@ namespace FOS.Models.Entities
         /// userName
         /// </summary>
         [JsonProperty(PropertyName = "userName", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
-        public int? UserName { get; set; }
+        public string? UserName { get; set; }
     }
 }

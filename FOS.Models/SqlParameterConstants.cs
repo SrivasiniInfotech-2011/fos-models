@@ -69,6 +69,7 @@
         public const string PROSPECT_CODE = "@Prospect_Code";
         public const string PROSPECT_ERROR_CODE = "@Error_Code";
 
+        public const string MODE = "@Mode";
         public const string LOB_ID = "@LOB_ID";
         public const string VALIDATION_CODE = "@Validation_Code";
         public const string VALIDATION_MESSAGE = "@Validation_Message";
@@ -79,6 +80,7 @@
         public const string STATUS = "@Status";
         //Lead
         public const string LEAD_ID = "@Lead_ID";
+        public const string PERSON_TYPE = "@Person_Type";
         public const string LEAD_VEHICLE_NUMBER = "@Vehicle_Number";
         public const string LEAD_NUMBER = "@Lead_Number";
         public const string LEAD_GUARANTORTYPE_ID = "@GuarantorType_ID";
@@ -176,5 +178,8 @@
         public const string USER_MANAGEMENT_CREATED_BY = "@CreatedBy";
         public const string USER_MANAGEMENT_ERROR_CODE = "@ErrorCode";
 
+
+        //Field Verification
+        public const string FIELD_VERIFICATION_ID = "@FieldVerification_ID";
     }
 }

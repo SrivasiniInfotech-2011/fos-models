@@ -53,6 +53,16 @@
         public const string FOS_GET_LOB_LIST = "FOS_Get_LOB_LIST";
         public const string FOS_ORG_GET_USERNAMEAGT = "FOS_ORG_GET_UserNameAGT";
         public const string FOS_SYSAD_DOCUMENT_LOOKUPDETAILS = "FOS_SYSAD_Document_LookupDetails";
+        public const string FOS_ORG_GET_FVRHIRERLOOKUP = "FOS_ORG_GET_FVRHirerLookup";
+        public const string FOS_ORG_INSERT_FVRHIRERDETAILS = "FOS_ORG_Insert_FVRHirerDetails";
+        public const string FOS_ORG_GET_LEADHIRERDETAILS = "FOS_ORG_GET_LeadHirerDetails_New";
+        public const string FOS_ORG_GET_FVRNEIGHBOURDETAILS = "FOS_ORG_Get_FVRNeighbourDetails";
+        public const string FOS_ORG_GET_FVRASSETLOOKUP = "FOS_ORG_GET_FVRAssetLookup";
+        public const string FOS_ORG_GET_LEADASSETDETAILS = "FOS_ORG_GET_LeadAssetDetails";
+        public const string FOS_ORG_GET_FVRNEIGHBOURLOOKUP = "FOS_ORG_GET_FVRNeighbourLookup"; 
+        public const string FOS_ORG_INSERT_FVRASSETDETAILS = "FOS_ORG_INSERT_FVRAssetDetails";
+        public const string FOS_ORG_GET_FVRASSETDETAILS = "FOS_ORG_GET_FVRASSETDETAILS";
+        public const string FOS_ORG_GET_FVRDETAILS = "FOS_ORG_Get_FVRDetails";
         public const string FOS_PROSPECT_EXPORT_QUERY = @"SELECT DISTINCT PH.Prospect_ID AS ProspectId,
 				PH.Prospect_Code as ProspectCode,
 				PH.Prospect_Name as ProspectName,
@@ -108,7 +118,6 @@
         public const string FOS_SYSAD_GET_UserViewDetails = @"FOS_SYSAD_GET_UserViewDetails";
 
         public const string FOS_Sysad_Get_UserMaster = @"FOS_Sysad_Get_UserMaster";
-        public const string FOS_ORG_GET_UserNameAGT = @"FOS_ORG_GET_UserNameAGT";
         //       public const string FOS_ORG_GET_UserNameAGT = @"SELECT User_ID as UserID,  
         //(User_Code + '-' + User_Name) AS UserName  
         //FROM FOS_SYSAD_UserMaster (NOLOCK)   
@@ -118,6 +127,14 @@
         public const string FOS_Get_Company_Details = @"FOS_Get_Company_Details";
 
 
+
+        public const string FOS_ORG_GET_UserNameAGT = @"FOS_ORG_GET_UserNameAGT";
+ //       public const string fos_org_get_usernameagt = @"select user_id as userid,  
+ //(user_code + '-' + user_name) as username  
+ //from fos_sysad_usermaster (nolock)   
+ //where company_id = @companyid   
+ //and (user_name + user_code) like  '%' + @prefixtext + '%'; "; 
+ 
 
 
 
