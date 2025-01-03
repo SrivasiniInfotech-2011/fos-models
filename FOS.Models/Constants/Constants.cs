@@ -314,7 +314,7 @@
             public const string ODRegLicNumber = "OD_Reg_Lic_Number";
             public const string ODValidityOfRegLicNumber = "OD_Validity_Of_Reg_Lic_Number";
             public const string ODIncomeTaxPANNumber = "OD_Income_Tax_PAN_Number";
-            public const string Inr = "INR";
+            public const string Currency = "Currency";
             public const string ODRemarks = "OD_Remarks";
             public const string Active = "Active";
             public const string Constitutional_Status = "Constitutional_Status";
