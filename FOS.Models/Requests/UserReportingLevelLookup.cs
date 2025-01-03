@@ -19,5 +19,11 @@ namespace FOS.Models.Requests
 
         [JsonProperty(PropertyName = "prefixText", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? PrefixText { get; set; }
+
+        [JsonProperty(PropertyName = "lOBID", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public int? LOB_ID { get; set; }
+
+        [JsonProperty(PropertyName = "locationID", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public int? location_ID { get; set; }
     }
 }
