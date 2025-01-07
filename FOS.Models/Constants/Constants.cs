@@ -267,7 +267,7 @@
             public const string Gender_Id = "GenderID";
             public const string Password = "Password";
             public const string DOJ = "Doj";
-            public const string Email = "Email_ID";
+            public const string Email = "Email";
             public const string EmergencycontactNumber = "EmergencyContact_Number";
             public const string Designation = "Designation";
             public const string Designationid = "DesignationID";
