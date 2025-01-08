@@ -134,6 +134,12 @@ namespace FOS.Models.Entities
         public string? AadharImagePath { get; set; }
 
         /// <summary>
+        /// Aadhar Image Content.
+        /// </summary>
+        [JsonProperty(PropertyName = "aadharImageContent", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public string? AadharImageContent { get; set; }
+
+        /// <summary>
         /// PAN Card Number.
         /// </summary>
         [JsonProperty(PropertyName = "panNumber", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
@@ -146,10 +152,22 @@ namespace FOS.Models.Entities
         public string? PanNumberImagePath { get; set; }
 
         /// <summary>
+        /// PAN Card Image Content.
+        /// </summary>
+        [JsonProperty(PropertyName = "panNumberImageContent", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public string? PanNumberImageContent { get; set; }
+
+        /// <summary>
         /// Prospect Image Path.
         /// </summary>
         [JsonProperty(PropertyName = "prospectImagePath", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
         public string? ProspectImagePath { get; set; }
+
+        /// <summary>
+        /// Prospect Image Content.
+        /// </summary>
+        [JsonProperty(PropertyName = "prospectImageContent", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public string? ProspectImageContent { get; set; }
 
     }
 }
