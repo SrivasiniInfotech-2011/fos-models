@@ -184,6 +184,12 @@ namespace FOS.Models.Requests
         public long? active { get; set; }
 
         /// <summary>
+        /// gstNumber.
+        /// </summary>
+        [JsonProperty(PropertyName = "gstNumber", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public string? gstNumber { get; set; }
+
+        /// <summary>
         /// Constitutional_Status.
         /// </summary>
         [JsonProperty(PropertyName = "constitutionalstatus", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]

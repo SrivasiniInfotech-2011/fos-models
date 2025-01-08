@@ -287,7 +287,7 @@
             public const string UserImagepath = "UserImage";
             
             public const string DoB = "DateofBirth";
-
+            
 
 
             //Company Master
@@ -320,6 +320,7 @@
             public const string Currency = "Currency";
             public const string ODRemarks = "OD_Remarks";
             public const string Active = "Active";
+            public const string GSTNumber = "GST_Number";
             public const string Constitutional_Status = "Constitutional_Status";
 
             public const string marutialStatusDiscription = "Maritial_Status_Description";
