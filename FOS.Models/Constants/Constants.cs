@@ -272,6 +272,7 @@
             public const string Designation = "Designation";
             public const string Designationid = "DesignationID";
             public const string UserLevelID = "User_LevelID";
+            public const string userGroup = "USER_GROUP_ID";
             public const string UserLevel = "User_Level";
             public const string ReportingNextlevel = "Reporting_HigherLevel";
             
@@ -285,6 +286,8 @@
             public const string PanNumber = "PanNumber";
             public const string Address = "Address";
             public const string UserImagepath = "UserImage";
+            public const string IsActive = "Is_Active";
+            public const string relivingDate = "relivingDate";
             
             public const string DoB = "DateofBirth";
 

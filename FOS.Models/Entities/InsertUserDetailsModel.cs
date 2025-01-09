@@ -100,6 +100,12 @@ namespace FOS.Models.Entities
         public DateTime? Dateofbirth { get; set; }
 
         /// <summary>
+        /// RelivingDate.
+        /// </summary>
+        [JsonProperty(PropertyName = "relivingDate", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
+        public DateTime? RelivingDate { get; set; }
+
+        /// <summary>
         /// FatherName.
         /// </summary>
         [JsonProperty(PropertyName = "fatherName", NullValueHandling = NullValueHandling.Ignore, Required = Required.Default)]
