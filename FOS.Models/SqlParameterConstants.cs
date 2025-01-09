@@ -177,7 +177,7 @@
         public const string USER_MANAGEMENT_IS_ACTIVE = "@Is_Active";
         public const string USER_MANAGEMENT_CREATED_BY = "@CreatedBy";
         public const string USER_MANAGEMENT_ERROR_CODE = "@ErrorCode";
-
+        public const string USER_MANAGEMENT_RelivingDate = "@relivingDate";
 
         //Field Verification
         public const string FIELD_VERIFICATION_ID = "@FieldVerification_ID";
