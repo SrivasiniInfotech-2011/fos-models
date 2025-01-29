@@ -178,6 +178,11 @@
         public const string USER_MANAGEMENT_CREATED_BY = "@CreatedBy";
         public const string USER_MANAGEMENT_ERROR_CODE = "@ErrorCode";
 
+        //Global Parameter Setup
+        public const string GLOBAL_PARAMETER_COMPANY_ID = "@Company_ID";
+        public const string GLOBAL_PARAMETER_USER_ID = "@User_ID";
+
+
 
         //Field Verification
         public const string FIELD_VERIFICATION_ID = "@FieldVerification_ID";

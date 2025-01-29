@@ -126,6 +126,8 @@
 
         public const string FOS_Get_Company_Details = @"FOS_Get_Company_Details";
 
+        public const string FOS_SYSAD_GET_GlobalParameterSetup = @"FOS_SYSAD_GET_GlobalParameterSetup";
+
 
 
         public const string FOS_ORG_GET_UserNameAGT = @"FOS_ORG_GET_UserNameAGT";
